@@ -9,11 +9,6 @@ class Board:
     def make_move(self, x, y, symbol):
         self.board[x][y] = symbol
 
-    def display(self):
-        for row in self.board:
-            print('|'.join(row))
-            print('-' * 5)
-
     def is_board_full(self):
         for i in range(self.board_size):
             for j in range(self.board_size):
